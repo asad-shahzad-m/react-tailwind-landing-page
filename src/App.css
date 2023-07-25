@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Averta;
+    src: url('./assets/AvertaDemoPECuttedDemo-Regular.ttf');
+}
+
+@layer base {
+    html {
+        font-family: 'Averta';
+    }
+}
+
+#root {
+    @apply max-w-[1440px] mt-0 mx-auto;
+}
+
+body > div > * {
+    @apply mx-12;
+}
+
+.object-inherit {
+    object-fit: inherit;
+}
